@@ -6,7 +6,7 @@ const auth    = require('../middleware/auth')
 const router = express.Router()
 const groq   = new Groq({ apiKey: process.env.GROQ_API_KEY })
 
-const Chat = require('../models/Chat')
+const Chat = require('../models/chat')
 
 router.post('/', auth, async (req, res) => {
   try {
